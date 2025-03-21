@@ -1,0 +1,165 @@
+/* Contact Page Hero Section */
+.contact-hero {
+    position: relative;
+    background: #e6f3ff;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contact-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.contact-hero h1 {
+    position: relative;
+    font-size: 2.5rem;
+    margin: 0;
+    z-index: 1;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/* Contact Section */
+.contact-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    margin-bottom: 4rem;
+}
+
+.contact-person {
+    text-align: center;
+}
+
+.contact-person h2 {
+    color: #1a4789;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.contact-person .phone {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.contact-person .email {
+    color: #1a4789;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.contact-person .email:hover {
+    text-decoration: underline;
+}
+
+/* Certificate Grid */
+.certificate-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin: 4rem auto;
+    max-width: 1200px;
+    padding: 0 2rem;
+}
+
+.certificate-item {
+    text-align: center;
+}
+
+.certificate-item img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+/* Visit Us Section */
+.visit-us {
+    text-align: center;
+    margin: 4rem auto;
+    max-width: 800px;
+    padding: 0 2rem;
+}
+
+.visit-us h2 {
+    color: #1a4789;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.visit-us p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+/* Map Section */
+.map-section {
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.map-section iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .certificate-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-hero h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .certificate-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-hero h1 {
+        font-size: 2rem;
+    }
+
+    .contact-person h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact-person .phone {
+        font-size: 1.2rem;
+    }
+
+    .contact-person .email {
+        font-size: 1rem;
+    }
+} 
