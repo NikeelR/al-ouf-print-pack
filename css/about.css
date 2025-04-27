@@ -1,0 +1,125 @@
+/* About Page Hero Section */
+.about-hero {
+    position: relative;
+    background: #e6f3ff;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.about-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.about-hero h1 {
+    position: relative;
+    font-size: 2.5rem;
+    margin: 0;
+    z-index: 1;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/* Rest of about page styles */
+
+/* Visit Us Section */
+.visit-us {
+    text-align: center;
+    margin: 2rem auto;
+    max-width: 800px;
+    padding: 0 2rem;
+}
+
+.visit-us h2 {
+    color: #1a4789;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.visit-us p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+/* Map Section */
+.map-section {
+    width: 100%;
+    margin: 2rem 0;
+    padding: 0 2rem;
+}
+
+.map-section iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .visit-us {
+        margin: 2rem auto;
+    }
+
+    .visit-us h2 {
+        font-size: 1.8rem;
+    }
+
+    .visit-us p {
+        font-size: 1.1rem;
+    }
+
+    .map-section {
+        margin: 1rem 0;
+    }
+
+    .map-section iframe {
+        height: 350px;
+    }
+}
+
+/* About Section Styles */
+.about-section {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-content {
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+.about-text {
+    text-align: justify;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .about-section {
+        padding: 2rem 1rem;
+    }
+    
+    .about-text {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+} 
